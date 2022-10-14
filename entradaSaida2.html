@@ -1,0 +1,30 @@
+<h1>Comando JS</h1>
+
+
+<hr>
+<form id="formulario">
+	<input type="text" id="wendel">
+	<input type="text" id="wendel2">
+	<input type="submit">
+</form>
+
+<h2 id="resultado"></h2>
+
+<script type="text/javascript">
+	var form = document.getElementById('formulario');
+	var nome = document.getElementById(
+		'wendel');
+	var nome = document.getElementById(
+		'wendel2');
+	var resu = document.getElementById('resultado');
+
+	form.addEventListener('submit',function(e){
+		resu.innerText=nome.value;
+
+		e.preventDefault();
+	});
+
+
+
+
+</script>

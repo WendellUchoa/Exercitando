@@ -1,0 +1,41 @@
+<h1>Comando JS</h1>
+
+
+<hr>
+<form id="formulario">
+	<input type="text" id="numero1">
+	<input type="text" id="numero2">
+	<input type="submit">
+</form>
+
+<h2 id="som"></h2>
+<h2 id="sub"></h2>
+<h2 id="div"></h2>
+<h2 id="multi"></h2>
+
+
+<script type="text/javascript">
+
+	var form = document.getElementById('formulario');
+	var numero1 = document.getElementById(
+		'numero1');
+	var numero2 = document.getElementById(
+		'numero2');
+	var soma = document.getElementById('som');
+	var subtracao = document.getElementById('sub');
+	var divisao = document.getElementById('div');
+	var multiplicacao = document.getElementById('multi');
+
+	form.addEventListener('submit',function(e){
+		soma.innerText=parseInt(numero1.value)+parseInt(numero2.value);
+		subtracao.innerText=parseInt(numero1.value)-parseInt(numero2.value);
+		divisao.innerText=parseInt(numero1.value)/(numero2.value);
+		multiplicacao.innerText=parseInt(numero1.value)*parseInt(numero2.value);
+
+		e.preventDefault();
+	});
+
+
+
+
+</script>
